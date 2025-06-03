@@ -21,4 +21,4 @@ jobs:
 
     - name: Run command on remote server
       run: |
-        ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "hostname && uptime"
+        ssh -p 19021 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "hostname && uptime"
